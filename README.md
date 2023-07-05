@@ -1,34 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Lista de Tarefas 📜
 
-## Getting Started
+Este é um projeto simples de uma lista de tarefas, desenvolvido em React com Next.js e TypeScript. Ele utiliza o Tailwind CSS para estilização dos componentes.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Adicionar uma nova tarefa à lista.
+- Remover uma tarefa da lista.
+- Alterar uma tarefa da lista.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Pré-requisitos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Certifique-se de ter o Node.js e o npm instalados em sua máquina.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Como executar o projeto
 
-## Learn More
+1. Clone este repositório em sua máquina local:
 
-To learn more about Next.js, take a look at the following resources:
+   ```
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Navegue até o diretório do projeto:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```
+   cd nome-do-repositorio
+   ```
 
-## Deploy on Vercel
+3. Instale as dependências do projeto:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Inicie o servidor de desenvolvimento:
+
+   ```
+   npm run dev
+   ```
+
+5. Acesse o aplicativo no seu navegador em `http://localhost:3000`.
+
+## Estrutura do projeto
+
+- `src/app/pages/page.tsx`: Página inicial do projeto que exibe a lista de tarefas.
+
+## Como funciona
+
+- O state  `list` mantém um array de tarefas.
+- Ao clicar no botão "Adicionar", o valor do campo de input é capturado e adicionado ao array de tarefas por meio de um método de clonagem.
+- Ao clicar no botão "Remover" em um item da lista, é capturado o índice do item e, em seguida, uma nova lista é criada usando o método `filter` para excluir o item correspondente ao índice.
+- Ao clicar no botão "Alterar" em um item da lista, é possível modificar o conteúdo da tarefa.
+
+Sinta-se à vontade para personalizar e expandir este projeto de acordo com suas necessidades. 
+
+Divirta-se!
